@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    defaultConfig {
+        applicationId "com.ciuc.andrii.ar_test"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // Provides ARCore Session and related resources.
+    implementation 'com.google.ar:core:1.10.0'
+
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.10.0'
+
+    // Alternatively, use ArSceneView without the UX dependency.
+    implementation 'com.google.ar.sceneform:core:1.10.0'
+
+    implementation "com.google.ar.sceneform:animation:1.10.0"
+
+}
+
+
+sceneform.asset('sampled/models/bear.fbx',
+        'default',
+        'sampled/models/bear.sfa',
+        'src/main/res/raw/bear')
+
+sceneform.asset('sampled/models/cat.fbx',
+        'default',
+        'sampled/models/cat.sfa',
+        'src/main/res/raw/cat')
+
+sceneform.asset('sampled/models/cow.fbx',
+        'default',
+        'sampled/models/cow.sfa',
+        'src/main/res/raw/cow')
+
+sceneform.asset('sampled/models/dino.fbx',
+        'default',
+        'sampled/models/dino.sfa',
+        'src/main/res/raw/dino')
+
+
+
+sceneform.asset('sampled/models/dog.fbx',
+        'default',
+        'sampled/models/dog.sfa',
+        'src/main/res/raw/dog')
+
+sceneform.asset('sampled/models/elephant.fbx',
+        'default',
+        'sampled/models/elephant.sfa',
+        'src/main/res/raw/elephant')
+
+sceneform.asset('sampled/models/ferret.fbx',
+        'default',
+        'sampled/models/ferret.sfa',
+        'src/main/res/raw/ferret')
+
+sceneform.asset('sampled/models/hippopotamus.fbx',
+        'default',
+        'sampled/models/hippopotamus.sfa',
+        'src/main/res/raw/hippopotamus')
+
+sceneform.asset('sampled/models/horse.fbx',
+        'default',
+        'sampled/models/horse.sfa',
+        'src/main/res/raw/horse')
+
+sceneform.asset('sampled/models/koala_bear.fbx',
+        'default',
+        'sampled/models/koala_bear.sfa',
+        'src/main/res/raw/koala_bear')
+
+
+sceneform.asset('sampled/models/lion.fbx',
+        'default',
+        'sampled/models/lion.sfa',
+        'src/main/res/raw/lion')
+
+sceneform.asset('sampled/models/wolverine.fbx',
+        'default',
+        'sampled/models/wolverine.sfa',
+        'src/main/res/raw/wolverine')
+
+sceneform.asset('sampled/models/ironman.fbx',
+        'default',
+        'sampled/models/ironman.sfa',
+        'src/main/res/raw/ironman')
+
+sceneform.asset('sampled/models/dragon.fbx',
+        'default',
+        'sampled/models/dragon.sfa',
+        'src/main/res/raw/dragon')
+
+sceneform.asset('sampled/models/dragon2.fbx',
+        'default',
+        'sampled/models/dragon2.sfa',
+        'src/main/res/raw/dragon2')
+
+sceneform.asset('sampled/models/lego.fbx',
+        'default',
+        'sampled/models/lego.sfa',
+        'src/main/res/raw/lego')
+
+sceneform.asset('sampled/models/teddy.fbx',
+        'default',
+        'sampled/models/teddy.sfa',
+        'src/main/res/raw/teddy')

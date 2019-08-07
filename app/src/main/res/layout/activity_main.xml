@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!--<com.google.ar.sceneform.ArSceneView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/arView"/>-->
+
+    <fragment android:name="com.google.ar.sceneform.ux.ArFragment"
+              android:id="@+id/arView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageBear"
+                    android:src="@drawable/bear"/>
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageCat"
+                    android:src="@drawable/cat"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageCow"
+                    android:src="@drawable/cow"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageDog"
+                    android:src="@drawable/dog"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageElephant"
+                    android:src="@drawable/elephant"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageFerrer"
+                    android:src="@drawable/ferret"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageHippopotamus"
+                    android:src="@drawable/hippopotamus"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageHorse"
+                    android:src="@drawable/horse"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageKoala"
+                    android:src="@drawable/koala_bear"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageLion"
+                    android:src="@drawable/lion"/>
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageWolverine"
+                    android:src="@drawable/wolverine"/>
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIronman"
+                    android:src="@drawable/iron_man"/>
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageDragon"
+                    android:src="@drawable/dragon"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+</FrameLayout>
